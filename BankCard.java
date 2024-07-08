@@ -14,6 +14,7 @@ public class BankCard
     private int balanceAmount;
     
     // making constructor
+    public BankCard(){}
     public BankCard(int cardID, String issuerBank, String bankAccount, int balanceAmount)
     {
         // assiging the values of the parameter to the attributes
@@ -71,10 +72,11 @@ public class BankCard
     public void display()
     {
         // displaying output
+        System.out.println("------------------------");
         System.out.println("cardID: "+this.cardID);
         System.out.println("issuerBank: "+this.issuerBank);
         System.out.println("bankAccount: "+this.bankAccount);
-        System.out.println("balanceAmount: "+this.balanceAmount);
+        // System.out.println("balanceAmount: "+this.balanceAmount);
         // checking if clientName is empty or not
         if(clientName != " "){
             // displaying clientName as if it is not empty

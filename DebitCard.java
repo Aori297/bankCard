@@ -55,15 +55,17 @@ public class DebitCard extends BankCard
     
     /* creating method named withdraw 
     it checks if the pin number is valid and sufficient amount is present*/
-    public void withdraw(int withdrawalAmount, String dateOfWithdrawal, int pinNumber)
+    public int withdraw(int withdrawalAmount, String dateOfWithdrawal, int pinNumber)
     {
         // to check if the PIN number matches or not
         if(pinNumber != getpinNumber()){
             System.out.println("PIN Number is incorrect.");
+            return 1;
             
             // checking if there is sufficient balance to withdrawal
         } else if (withdrawalAmount > super.getbalanceAmount()){
             System.out.println("You dont have sufficient balance.");
+            return 2;
             
             // deducting balance if the above two conditions are met
         } else {
@@ -72,6 +74,7 @@ public class DebitCard extends BankCard
             this.hasWithdrawn = true;
             super.setbalanceAmount(super.getbalanceAmount() - withdrawalAmount);
         }
+        return 0; 
     }
     
     /* creating display method with the same signature as the display method in BankCard 
@@ -79,10 +82,11 @@ public class DebitCard extends BankCard
     public void display()
     {
         // displaying required attribute values 
+        // calling display method of BankCard
+        super.display();
         if(hasWithdrawn == true){
-            // calling display method of BankCard
-            super.display();
             // displaying data with suitable annotations
+            System.out.println("balanceAmount: "+getbalanceAmount());
             System.out.println("pinNumber: "+pinNumber);
             System.out.println("withdrawalAmount: "+withdrawalAmount);
             System.out.println("dateOfWithdrawal: "+dateOfWithdrawal);

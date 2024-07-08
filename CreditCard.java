@@ -1,3 +1,8 @@
+
+
+
+
+
 /**
  * Write a description of class BankCard here.
  *
@@ -14,7 +19,8 @@ public class CreditCard extends BankCard
     private int gracePeriod;
     private boolean isGranted;
     
-    // creating constructor 
+    // creating constructor
+    public CreditCard(){}
     public CreditCard(int cardID, String clientName, String issuerBank, String bankAccount, int balanceAmount, int cvcNumber, double interestRate, String expirationDate)
     {
         // calling the super class constructor
@@ -95,6 +101,7 @@ public class CreditCard extends BankCard
             // calling display method of BankCard
             super.display();
             // displaying required details
+            System.out.println("balanceAmount: "+getbalanceAmount());
             System.out.println("CVC number: " +this.cvcNumber);
             System.out.println("Credit Limit: " +this.creditLimit);
             System.out.println("Grace Period: " +this.gracePeriod);
@@ -102,6 +109,7 @@ public class CreditCard extends BankCard
             System.out.println("Interest Rate: " +this.interestRate);
         } else {
             super.display();
+            System.out.println("balanceAmount: "+getbalanceAmount());
             System.out.println("CVC number: " +cvcNumber);
             System.out.println("Expiration Date: " +expirationDate);
             System.out.println("Interest Rate: " +interestRate);
