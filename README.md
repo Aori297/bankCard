@@ -1,9 +1,9 @@
 # Bank Card Management System
-This project is a Java-based application that demonstrates Object-Oriented Programming (OOP) concepts and GUI development. It consists of two phases completed across two semesters.
+This project is a Java-based application that demonstrates Object-Oriented Programming (OOP) concepts and GUI development. It consists of two phases..
 
 
 
-## Semester 1: Object-Oriented Design
+## Object-Oriented Design
 In the first phase, the project implements a real-world scenario using Java's OOP approach. The core classes include:
 - BankCard: Parent class representing a general bank card.
 - DebitCard: Child class for managing debit card functionalities.
@@ -16,7 +16,7 @@ In the first phase, the project implements a real-world scenario using Java's OO
 - Inheritance
 
 
-## Semester 2: GUI Implementation
+## GUI Implementation
 In the second phase, the project expands by adding a graphical user interface (GUI) to interact with the BankCard, DebitCard, and CreditCard classes.
 
 ### Features:
