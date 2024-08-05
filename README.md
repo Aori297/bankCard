@@ -1,5 +1,5 @@
 # Bank Card Management System
-This project is a Java-based application that demonstrates Object-Oriented Programming (OOP) concepts and GUI development. It consists of two phases..
+This project is a Java-based application that demonstrates Object-Oriented Programming (OOP) concepts and GUI development. It consists of two phases.
 
 
 
